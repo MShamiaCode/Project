@@ -1,0 +1,48 @@
+/*****Start Default Theme*/
+/*Start Navbar*/
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover,
+.carousel-indicators .active {
+    background-color: #FFD500;
+}
+
+.navbar-brand span,
+.carousel-caption .h1,
+.glyphicon-chevron-right:hover,
+.glyphicon-chevron-left:hover,
+.about h1 span,
+.about h3 span,
+.feat span.glyphicon,
+.testimonials span,
+.contact-us .fa-headphones,
+.footer h3,
+.footer .copyright span,
+.option-box .gear-check,
+#scroll-top {
+    color: #FFD500;
+}
+
+.dropdown-menu,
+.carousel-caption,
+.carousel-indicators .active,
+.testimonials .carousel-indicators li.active,
+.option-box .color-option {
+    border-color: #FFD500;
+}
+
+.dropdown-menu .divider {
+    background-color: #aa8e04;
+}
+
+.our-team .team .person img:hover {
+    filter: grayscale(0) drop-shadow(2px 4px 5px #FFD500);
+}
+
+.our-team {
+    background-image: url(../images/yellow-theme1.gif);
+}
+
+/****End Default Theme*/

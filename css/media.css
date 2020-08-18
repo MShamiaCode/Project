@@ -1,0 +1,53 @@
+/*Start Media Query*/
+
+/*Mobile and Tablets*/
+@media (max-width:767px) {
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: none;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+        color: #871818;
+    }
+
+    .subscribe .form-control {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .our-team .team .person img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .testimonials .carousel-indicators li {
+        width: 70px;
+        height: 70px;
+    }
+
+    .col-lg-4.our-projects {
+        text-align: center;
+    }
+}
+
+
+/*From Small Screen*/
+
+@media (min-width:768px) and (max-width:991px) {}
+
+
+/*Medium screen*/
+
+@media (min-width:992px)and (max-width:1199) {}
+
+
+/*Large Screen*/
+
+@media (min-width:1200px) {}
+
+/*End Media Query*/

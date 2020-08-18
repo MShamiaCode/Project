@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/newstyle.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="css/hover.css" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/default-theme.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!--
+    First:Navbar
+    1.(navbar-inverse/default) >>>>>> Change color of navbar to inverse
+    2.(navbar-fixed-top) >>>> Fixed navbar top
+    make to body padding-top to show the content under navbar not behind navbar
+    3.(navbar-fixed-bottom) >>>> fixed navbar bottom
+    4.navbar-header >>>>> 
+        1.button for mobile
+        2.brand(logo)
+    5.collapse navbar-collapse collect
+        1.links
+        2.toggles
+        3.forms
+    6.navbar-right >>> control place of navbar
+
+-->
+<!--******************************************************************-->
+<!--
+
+    Second:Carousal (Slider)
+
+    1.Indicators >>> 0 0 0 0 
+    2.Item(Normal/Active)       >>>1.Image
+                                   2.Caption
+-->
+<!--*********************************************************************-->
+
+<!--
+    Note
+    1.
+    <div class="row"></div>
+
+    (row) >>>>> margin-right:-15px
+                margin-left:-15px
+    
+    to solve this problem use grid system 
+    (row,col)
+    example >> col-xs-12 
+
+    So Use Grid System Or Use  Container 
+
+    2.
+    U can hidden some content in extra small screen or any size 
+    by use example hidden-xs
+
+
+-->
+
+<body>
+  <!--Start Tool Box Section-->
+  <section class="option-box">
+    <div class="color-option">
+      <h4>Color Option</h4>
+      <ul class="list-unstyled">
+        <li data-value="css/default-theme.css" data-scroll="#E41B17"></li>
+        <li data-value="css/yellow-theme.css" data-scroll="#FFD500"></li>
+        <li data-value="css/purble-theme.css" data-scroll="#E426D5"></li>
+        <li data-value="css/blue-theme.css" data-scroll="#009AFF"></li>
+      </ul>
+    </div>
+    <i class="fa fa-gear fa-3x gear-check hvr-forward"></i>
+  </section>
+
+  <!--End Tool Box Section-->
+
+  <!--Start navbar-->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!--This button for mobile-->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#our-navbar"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">MShamia <span>Inc.</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="our-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="bootstrap3.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Services<span class="caret"></span></a>
+            <!--This ul for dropdown link-->
+            <ul class="dropdown-menu">
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Desktop</a></li>
+              <li role="separator" class="divider"></li>
+              <!--Divider >> The Divider line-->
+              <li><a href="#">Web Hosting</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Map</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!--End Container-->
+  </nav>
+
+  <!--End Navbar-->
+
+  <!--Start Carousal-->
+  <div id="myslide" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators hidden-xs">
+      <li data-target="#myslide" data-slide-to="0" class="active"></li>
+      <li data-target="#myslide" data-slide-to="1"></li>
+      <li data-target="#myslide" data-slide-to="2"></li>
+      <li data-target="#myslide" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/slider-1.jpg" alt="product" />
+        <div class="carousel-caption">
+          <h2 class="h1">All Prdoucts</h2>
+          <p class="lead">
+            is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer
+          </p>
+          <div class="btn btn-primary">Read More</div>
+          <div class="btn btn-danger">Buy Now</div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/slider-2.jpg" alt="product" />
+        <div class="carousel-caption">
+          <h2 class="h1">Headphone</h2>
+          <p class="lead">
+            is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer
+          </p>
+          <div class="btn btn-primary">Read More</div>
+          <div class="btn btn-danger">Buy Now</div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/slider-3.jpg" alt="pdoduct" />
+        <div class="carousel-caption">
+          <h2 class="h1">Phone</h2>
+          <p class="lead">
+            is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer
+          </p>
+          <div class="btn btn-primary">Read More</div>
+          <div class="btn btn-danger">Buy Now</div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/slider-4.jpg" alt="product" />
+        <div class="carousel-caption">
+          <h2 class="h1">Smart Pod</h2>
+          <p class="lead">
+            is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer
+          </p>
+          <div class="btn btn-primary">Read More</div>
+          <div class="btn btn-danger">Buy Now</div>
+        </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myslide" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myslide" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!--End Carousal-->
+
+  <!--Start Section About-->
+  <section class="about text-center wow bounceIn" data-wow-duration="2s" data-wow-offset="120">
+    <!--Start Container About-->
+    <div class="container">
+      <h1 class="hidden-xs">
+        Meet Out New Template <span>MShamia Inc.</span>
+      </h1>
+      <h3 class="visible-xs">
+        Meet Out New Template <span>MShamia Inc.</span>
+      </h3>
+      <p class="lead">
+        Hello Let Me Introduce Our Template MShamia Created With All The Love
+        With <strong>Bootstrap 3.2.0 </strong>
+      </p>
+    </div>
+    <!--End Container About-->
+  </section>
+
+  <!--End Section-->
+
+  <!--Start Section Features-->
+  <section class="features text-center">
+    <!--Start Container Section Features-->
+
+    <div class="container">
+      <h2 class="h1">Our Features</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="feat hvr-grow-shadow wow bounceInLeft" data-wow-offset="150" data-wow-duration="2s">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <h4>100% Responsive</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              suscipit augue id lectus rutrum, porta vestibulum nisl
+              venenatis. Ut eu venenatis ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feat hvr-grow-shadow wow bounceInUp" data-wow-offset="150" data-wow-duration="2s">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+            <h4>Retina Ready</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              suscipit augue id lectus rutrum, porta vestibulum nisl
+              venenatis. Ut eu venenatis ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feat hvr-grow-shadow wow bounceInDown" data-wow-offset="150" data-wow-duration="2s">
+            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+            <h4>Awesome Display</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              suscipit augue id lectus rutrum, porta vestibulum nisl
+              venenatis. Ut eu venenatis ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feat hvr-grow-shadow wow bounceInRight" data-wow-offset="150" data-wow-duration="2s">
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+            <h4>Well Documented</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              suscipit augue id lectus rutrum, porta vestibulum nisl
+              venenatis. Ut eu venenatis ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End Container Section Features-->
+  </section>
+
+  <!--End Section Features-->
+
+  <!--Start Testimonials Section-->
+  <section class="testimonials text-center wow flipInY" data-wow-offset="200" data-wow-duration="2s">
+    <!--Start Container Testimonials-->
+    <div class="container">
+      <h2 class="h1">What Our Clients Say</h2>
+      <!--Start Testimonials Carousal-->
+      <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <p class="lead">
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever
+              since the 1500s, when an unknown printer is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer
+            </p>
+            <span>Hassan Zohdy</span>
+          </div>
+          <div class="item">
+            <p class="lead">
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever
+              since the 1500s, when an unknown printer is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer
+            </p>
+            <span>Hind ragab</span>
+          </div>
+          <div class="item">
+            <p class="lead">
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever
+              since the 1500s, when an unknown printer is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer
+            </p>
+            <span>Zahra Ahmed</span>
+          </div>
+          <div class="item">
+            <p class="lead">
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever
+              since the 1500s, when an unknown printer is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer
+            </p>
+            <span>Jhon wick</span>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-testimonials" data-slide-to="0" class="active">
+            <img src="images/testimonials-1.jpg" alt="person" />
+          </li>
+          <li data-target="#carousel-testimonials" data-slide-to="1">
+            <img src="images/testimonials-2.jpg" alt="person" />
+          </li>
+
+          <li data-target="#carousel-testimonials" data-slide-to="2">
+            <img src="images/testimonials-4.jpg" alt="person" />
+          </li>
+
+          <li data-target="#carousel-testimonials" data-slide-to="3">
+            <img src="images/testimonials-3.jpg" alt="person" />
+          </li>
+        </ol>
+      </div>
+
+      <!--End Testimonials Carousal-->
+    </div>
+    <!--End Container Testimonials-->
+  </section>
+
+  <!--End Testimonials Section-->
+
+  <!--Start Price Table Section-->
+  <section class="price-table text-center">
+    <!--Start Container Price Table-->
+    <div class="container">
+      <h2 class="h1">Our Amazing Prices</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="price-box wow fadeInDownBig" data-wow-offset="220" data-wow-duration="2s">
+            <h2 class="text-primary">Hosting</h2>
+            <p class="center-block">40$</p>
+            <ul class="list-unstyled">
+              <li>Space: 30GB</li>
+              <li>Emails: 20</li>
+              <li>IPS: 2 IP</li>
+              <li>Databases: 10</li>
+              <li>FTP Accounts: 5</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="price-box wow fadeInUpBig" data-wow-offset="220" data-wow-duration="2s">
+            <h2 class="text-success">VPS</h2>
+            <p class="center-block">50$</p>
+            <ul class="list-unstyled">
+              <li>Space: 50GB</li>
+              <li>Emails: 30</li>
+              <li>IPS: 5 IP</li>
+              <li>Databases: 20</li>
+              <li>FTP Accounts: 10</li>
+            </ul>
+            <a href="#" class="btn btn-success">Order Now</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="price-box wow fadeInDownBig" data-wow-offset="220" data-wow-duration="2s">
+            <h2 class="text-info">Dedicated</h2>
+            <p class="center-block">70$</p>
+            <ul class="list-unstyled">
+              <li>Space: 80GB</li>
+              <li>Emails: 40</li>
+              <li>IPS: 8 IP</li>
+              <li>Databases: 30</li>
+              <li>FTP Accounts: 20</li>
+            </ul>
+            <a href="#" class="btn btn-info">Order Now</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="price-box wow fadeInUpBig" data-wow-offset="220" data-wow-duration="2s">
+            <h2 class="text-danger">Cloud</h2>
+            <p class="center-block">90$</p>
+            <ul class="list-unstyled">
+              <li>Space: 90GB</li>
+              <li>Emails: 50</li>
+              <li>IPS: 10 IP</li>
+              <li>Databases: 50</li>
+              <li>FTP Accounts: 50</li>
+            </ul>
+            <a href="#" class="btn btn-danger">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Container Price Table-->
+  </section>
+
+  <!--End Price Table Section-->
+
+  <!--Start Section Our Team-->
+  <section class="our-team text-center">
+    <div class="team">
+      <div class="container">
+        <h2 class="h1">Meet Our Awesome Team</h2>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="person  wow bounceInLeft"data-wow-offset="340" data-wow-duration="2s">
+              <img class="img-circle" src="images/person-1.jpg" alt="team" />
+              <!--class:="img-circle">>>border-radius 50%-->
+              <h3>Jhon Wick</h3>
+              <p>
+                Jhon Wick The Owner and Founder Of The Amazing Website
+                Css-Trick
+              </p>
+              <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-youtube fa-lg" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="person  wow bounceInUp"data-wow-offset="340" data-wow-duration="2s">
+              <img class="img-circle" src="images/person-3.jpg" alt="team" />
+              <h3>Marry Coyier</h3>
+              <p>
+                Marry Coyier Amazing Hacker Woman With A Much Knowledge In
+                Hacking
+              </p>
+              <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-youtube fa-lg" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="person wow bounceInDown"data-wow-offset="340" data-wow-duration="2s">
+              <img class="img-circle" src="images/person-2.jpg" alt="team" />
+              <h3>Stevan Bekato</h3>
+              <p>
+                Stevan Bekato The Man Who Change The World With His Apple
+                Products
+              </p>
+              <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-youtube fa-lg" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="person  wow bounceInRight"data-wow-offset="340" data-wow-duration="2s">
+              <img class="img-circle" src="images/person-4.jpg" alt="team" />
+              <h3>Chris David</h3>
+              <p>
+                Chris David Amazing Hacker Woman With A Much Knowledge In
+                Hacking
+              </p>
+              <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-youtube fa-lg" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Section Our Team-->
+
+  <!--Start Subscribe Section-->
+  <section class="subscribe text-center">
+    <!--Start Container Subscribe-->
+    <div class="container wow fadeInUpBig " data-wow-duration="2s" data-wow-offset="220">
+      <h2 class="h1">Keep In Touch</h2>
+      <p class="lead">
+        Sign Up For Newsletter Dont Worry About Span We Hate It Too
+      </p>
+      <form class="form-inline">
+        <input class="form-control input-lg" type="text" placeholder="Write Your Email" />
+        <button class="btn btn-danger btn-lg">
+          <i class="fa fa-edit fa-lg"></i> Subscribe
+        </button>
+      </form>
+    </div>
+    <!--End Container Subscribe-->
+  </section>
+
+  <!--End Subscribe Section-->
+  <!--Start Section Statistics-->
+  <section class="statistics text-center">
+    <div class="data">
+      <!--Start Container Statistics-->
+      <div class="container">
+        <h2 class="h1">Our Main Statistics</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="stats">
+              <i class="fa fa-users fa-5x"></i>
+              <p>9720</p>
+              <span>Satisfied Users</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="stats">
+              <i class="fa fa-comments fa-5x"></i>
+              <p>32,000</p>
+              <span>Posted Comments</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="stats">
+              <i class="fa fa-suitcase fa-5x"></i>
+              <p>4200</p>
+              <span>Projects Done</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="stats">
+              <i class="fa fa-support fa-5x"></i>
+              <p>98,524</p>
+              <span>Tickets Achived</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--End Container Statistics-->
+    </div>
+  </section>
+
+  <!--End Section Statistics-->
+
+  <!--Start Section Skills-->
+  <section class="our-skills">
+    <!--Start Container Skills-->
+    <div class="container">
+      <h2 class="text-center h1">Our Skills</h2>
+      <div class="row">
+        <!--Start Progress Skills-->
+        <div class="col-md-5">
+          <div class="skills-progress">
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                HTML5/CSS3
+              </div>
+            </div>
+          </div>
+          <div class="skills-progress">
+            <div class="progress">
+              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                PHP/MYSQL
+              </div>
+            </div>
+          </div>
+          <div class="skills-progress">
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                JavaScript/JQuery
+              </div>
+            </div>
+          </div>
+          <div class="skills-progress">
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                Wordpress
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Progress Skills-->
+
+        <!--Start Team Info-->
+        <div class="col-md-6 col-md-offset-1">
+          <div class="skills-info">
+            <h3>About The Team</h3>
+            <p class="lead">
+              We Are Specialised Design And Programming Team Passionate About
+              Web Design And Creating Digital Ideas We Will Transfer Your Idea
+              To A Digital Dream And Make Your Wish Come True
+            </p>
+            <button type="button" class="btn btn-primary">
+              Talk With A Professional
+            </button>
+          </div>
+        </div>
+        <!--End Team Info-->
+      </div>
+    </div>
+    <!--End Container Skills-->
+  </section>
+
+  <!--End Section Skills-->
+  <!--Start Section Contact US-->
+  <section class="contact-us text-center">
+    <div class="fields">
+      <div class="container">
+        <div class="row">
+          <i class="fa fa-headphones fa-5x"></i>
+          <h2 class="h1">Tell Us What You Fell</h2>
+          <p class="lead">Feel Free To Contact Us Anytime</p>
+          <!--Start Contact Form-->
+          <form>
+            <div class="col-md-6 wow bounceInLeft" data-wow-offset="200" data-wow-duration="1s">
+              <div class="form-group">
+                <input class="form-control input-lg" type="text" placeholder="Username" />
+              </div>
+              <div class="form-group">
+                <input class="form-control input-lg" type="text" placeholder="Email" />
+              </div>
+              <div class="form-group">
+                <input class="form-control input-lg" type="text" placeholder="CellPhone" />
+              </div>
+            </div>
+            <div class="col-md-6 wow bounceInRight" data-wow-offset="200" data-wow-duration="1s">
+              <div class="form-group">
+                <textarea class="form-control input-lg" placeholder="Your Message">
+                  </textarea>
+              </div>
+
+              <button type="button" class="btn btn-danger btn-lg btn-block hvr-float">
+                Contact Us
+              </button>
+            </div>
+          </form>
+          <!--End Contact Form-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--End Section Contact US-->
+
+  <!--Start Section Our Clients-->
+
+  <div class="our-clients">
+    <div class="container">
+      <div class="row">
+        <ul class="list-unstyled">
+          <li class="col-md-2 col-xs-4">
+            <img class="img-responsive center-block wow bounceIn" src="images/our-clients/client-1.jpg" alt="clients 1" data-wow-duration="1s" data-wow-offset="200" data-wow-delay="0.5s" />
+          </li>
+
+          <li class="col-md-2 col-xs-4">
+            <img class="img-responsive center-block wow bounceIn" src="images/our-clients/client-2.jpg" alt=" client-2" data-wow-duration="1s" data-wow-offset="200" data-wow-delay="1s"/>
+          </li>
+
+          <li class="col-md-2 col-xs-4">
+            <img class="img-responsive center-block wow bounceIn" src="images/our-clients/client-3.jpg" alt=" client-3"data-wow-duration="1s" data-wow-offset="200" data-wow-delay="1.5s"/>
+          </li>
+
+          <li class="col-md-2 col-xs-4">
+            <img class="img-responsive center-block wow bounceIn" src="images/our-clients/client-4.jpg" alt=" client-4" data-wow-duration="1s" data-wow-offset="200" data-wow-delay="2s"/>
+          </li>
+
+          <li class="col-md-2 col-xs-4">
+            <img class="img-responsive center-block wow bounceIn" src="images/our-clients/client-5.jpg" alt=" client-5" data-wow-duration="1s" data-wow-offset="200" data-wow-delay="2.5s"/>
+          </li>
+
+          <li class="col-md-2 col-xs-4">
+            <img class="img-responsive center-block wow bounceIn" src="images/our-clients/client-6.jpg" alt=" client-6" data-wow-duration="1s" data-wow-offset="200" data-wow-delay="3s"/>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--End Section Our Clients-->
+
+  <!--Start Footer-->
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h3>Sitemap</h3>
+          <ul class="list-unstyled three-columns">
+            <li>Home</li>
+            <li>About</li>
+            <li>Company</li>
+            <li>Code</li>
+            <li>Design</li>
+            <li>Host</li>
+            <li>Solution</li>
+            <li>Sitemap</li>
+            <li>Contact</li>
+          </ul>
+          <ul class="list-unstyled social-list">
+            <li>
+              <img src="images/social-icon/facebook.png" alt="Facebook" />
+            </li>
+            <li>
+              <img src="images/social-icon/google-plus.png" alt="Google-plus" />
+            </li>
+            <li>
+              <img src="images/social-icon/twitter.png" alt="Twitter" />
+            </li>
+            <li>
+              <img src="images/social-icon/pinterest.png" alt="pinterest" />
+            </li>
+            <li><img src="images/social-icon/rss.png" alt="rss" /></li>
+            <li><img src="images/social-icon/email.png" alt="email" /></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3>Latest Articles</h3>
+          <div class="media">
+            <a class="media-left" href="#">
+              <img class="media-object" src="images/articles/article-1.png" alt="Article" /></a>
+
+            <div class="media-body">
+              <h4 class="media-heading">Programming</h4>
+              This is Some ext About Programming Describe The Media of
+              Bootstrap 3.2.0
+            </div>
+          </div>
+          <div class="media">
+            <a class="media-left" href="#">
+              <img class="media-object" src="images/articles/article-2.png" alt="Article2" />
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Coding</h4>
+              This is Some ext About Programming Describe The Media of
+              Bootstrap 3.2.0
+            </div>
+          </div>
+          <div class="media">
+            <a class="media-left" href="#">
+              <img class="media-object" src="images/articles/article-3.png" alt="Article3" />
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Web Design</h4>
+              This is Some ext About Programming Describe The Media of
+              Bootstrap 3.2.0
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 our-projects">
+          <h3>Our Awesome Work</h3>
+          <img class="img-thumbnail" src="images/work/work-1.jpg" alt="our-work" />
+          <img class="img-thumbnail" src="images/work/work-2.jpg" alt="our-work" />
+          <img class="img-thumbnail" src="images/work/work-3.jpg" alt="our-work" />
+          <img class="img-thumbnail" src="images/work/work-4.jpg" alt="our-work" />
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center">
+      Copyright &copy; 2020 <span>MShamia Template</span>
+    </div>
+  </section>
+
+  <!--End Footer-->
+  <!--Start Section Loading-->
+  <section class="loading-overlay">
+    <div class="loader">
+      <h6>Loading--</h6>
+    </div>
+  </section>
+
+  <!--End Section Loading-->
+  <!--Start Scroll To Top-->
+  <div id="scroll-top">
+    <i class="fa fa-chevron-circle-up fa-3x hvr-bob"></i>
+  </div>
+
+  <!--End Scroll To Top-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap3.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
+
+<!--To make Website speed and performance
+    1.put dimention for images
+    2.use background sprites (background-position)
+    3.reduce amount of files(media,hover u can put it in style)
+    4.optimize images
+    5.minified css(compress file)
+    6.put images same size dont make resize to image in html or css
+    
+-->
